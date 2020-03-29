@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_-GR9UHAZEeq4y_Q99Xnf1Q" version="14.1.0.201810161215">
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <semanticResources>model/smartcity.ecore</semanticResources>
+  <semanticResources>model/smartcity.emf</semanticResources>
+  <semanticResources>model/smartcity.genmodel</semanticResources>
+</viewpoint:DAnalysis>

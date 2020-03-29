@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated smartcity -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="smartcity.presentation.SmartcityModelWizardID"
+            name="%_UI_SmartcityModelWizard_label"
+            class="smartcity.presentation.SmartcityModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SmartcityModelFile.gif">
+         <description>%_UI_SmartcityModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated smartcity -->
+      <editor
+            id="smartcity.presentation.SmartcityEditorID"
+            name="%_UI_SmartcityEditor_label"
+            icon="icons/full/obj16/SmartcityModelFile.gif"
+            extensions="smartcity"
+            class="smartcity.presentation.SmartcityEditor"
+            contributorClass="smartcity.presentation.SmartcityActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated smartcity -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="smartcity.DataAnalytics.presentation.DataAnalyticsModelWizardID"
+            name="%_UI_DataAnalyticsModelWizard_label"
+            class="smartcity.DataAnalytics.presentation.DataAnalyticsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DataAnalyticsModelFile.gif">
+         <description>%_UI_DataAnalyticsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated smartcity -->
+      <editor
+            id="smartcity.DataAnalytics.presentation.DataAnalyticsEditorID"
+            name="%_UI_DataAnalyticsEditor_label"
+            icon="icons/full/obj16/DataAnalyticsModelFile.gif"
+            extensions="dataanalytics"
+            class="smartcity.DataAnalytics.presentation.DataAnalyticsEditor"
+            contributorClass="smartcity.DataAnalytics.presentation.DataAnalyticsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated smartcity -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="smartcity.infrastructure.presentation.InfrastructureModelWizardID"
+            name="%_UI_InfrastructureModelWizard_label"
+            class="smartcity.infrastructure.presentation.InfrastructureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/InfrastructureModelFile.gif">
+         <description>%_UI_InfrastructureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated smartcity -->
+      <editor
+            id="smartcity.infrastructure.presentation.InfrastructureEditorID"
+            name="%_UI_InfrastructureEditor_label"
+            icon="icons/full/obj16/InfrastructureModelFile.gif"
+            extensions="infrastructure"
+            class="smartcity.infrastructure.presentation.InfrastructureEditor"
+            contributorClass="smartcity.infrastructure.presentation.InfrastructureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated smartcity -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="smartcity.stakeholder.presentation.StakeholderModelWizardID"
+            name="%_UI_StakeholderModelWizard_label"
+            class="smartcity.stakeholder.presentation.StakeholderModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StakeholderModelFile.gif">
+         <description>%_UI_StakeholderModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated smartcity -->
+      <editor
+            id="smartcity.stakeholder.presentation.StakeholderEditorID"
+            name="%_UI_StakeholderEditor_label"
+            icon="icons/full/obj16/StakeholderModelFile.gif"
+            extensions="stakeholder"
+            class="smartcity.stakeholder.presentation.StakeholderEditor"
+            contributorClass="smartcity.stakeholder.presentation.StakeholderActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

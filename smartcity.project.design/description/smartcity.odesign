@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="smartcity" version="12.0.0.2017041100">
+  <ownedViewpoints name="SmartCity" modelFileExtension="smartcity">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="MyCity" domainClass="smartcity::SmartCityModel">
+      <metamodel href="http://cs.gssi.it/smartcity#/"/>
+      <metamodel href="http://cs.gssi.it/smartcity#//stakeholder"/>
+      <metamodel href="http://cs.gssi.it/smartcity#//DataAnalytics"/>
+      <metamodel href="http://cs.gssi.it/smartcity#//infrastructure"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="SourceEdge" sourceMapping="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataBool'] //@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataInteger'] //@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataReal']" targetMapping="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']/@subContainerMappings[name='MonitoringInfrastructure'] //@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subNodeMappings[name='Stakeholder']" targetFinderExpression="feature:src">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="SmartCity" domainClass="smartcity::SmartCity">
+          <subNodeMappings name="Stakeholder" semanticCandidatesExpression="feature:stakeholders" domainClass="stakeholder::Stakeholder">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name + '[' + self.organization + ']'" sizeComputationExpression="-1" resizeKind="NSEW" arcWidth="4" arcHeight="4" workspacePath="/smartcity.project.design/icons/stakeholder.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subContainerMappings name="DataPackage" domainClass="DataAnalytics::DataPackage">
+            <subNodeMappings name="DataReal" semanticCandidatesExpression="feature:data" domainClass="DataAnalytics::RealValue">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/data_real.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="DataInteger" semanticCandidatesExpression="feature:data" domainClass="DataAnalytics::IntegerValue">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/data_integer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="DataBool" semanticCandidatesExpression="feature:data" domainClass="DataAnalytics::BoolValue">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/data_boolean.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="Infrastructure" domainClass="infrastructure::PublicInfrastructureLayer">
+            <subNodeMappings name="InfrastructureComponent" domainClass="infrastructure::InfrastructureComponent">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/infrastructure.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subContainerMappings name="MonitoringInfrastructure" domainClass="infrastructure::MonitoringInfrastructure">
+              <subNodeMappings name="Sensor" domainClass="infrastructure::Sensor">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="feature:model" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/sensor.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="Actuator" domainClass="infrastructure::Actuator">
+                <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="feature:model" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smartcity.project.design/icons/actuator.png">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="24" showIcon="false" labelExpression="feature:city">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="SmartCity">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="SmartCity" label="Smart City" containerMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartcity::SmartCity" referenceName="smartCities"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Stakeholder">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Stakeholder" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subNodeMappings[name='Stakeholder']" iconPath="/smartcity.project.design/icons/palette/stakeholder_palette.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="stakeholder::Stakeholder" referenceName="stakeholders"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="DataAnalytics" icon="/smartcity.project.design/icons/data_analytics.png">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="DataPackage" containerMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataAnalytics::DataPackage" referenceName="data"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DataInteger" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataInteger']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataAnalytics::IntegerValue" referenceName="data"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DataBool" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataBool']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataAnalytics::BoolValue" referenceName="data"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DataReal" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='DataPackage']/@subNodeMappings[name='DataReal']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataAnalytics::RealValue" referenceName="data"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Infrastructure">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="PublicInfrastructureLayer" label="Public Infrastucture Layer" containerMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="infrastructure::PublicInfrastructureLayer" referenceName="infrastructurelayer"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InfrastructureComponent" label="Component" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']/@subNodeMappings[name='InfrastructureComponent']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="infrastructure::InfrastructureComponent" referenceName="components"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="MonitoringInfrastructure" label="Monitoring Infrastructure" containerMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']/@subContainerMappings[name='MonitoringInfrastructure']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="infrastructure::MonitoringInfrastructure" referenceName="components"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Sensor" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']/@subContainerMappings[name='MonitoringInfrastructure']/@subNodeMappings[name='Sensor']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="infrastructure::Sensor" referenceName="devices"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Actuator" nodeMappings="//@ownedViewpoints[name='SmartCity']/@ownedRepresentations[name='MyCity']/@defaultLayer/@containerMappings[name='SmartCity']/@subContainerMappings[name='Infrastructure']/@subContainerMappings[name='MonitoringInfrastructure']/@subNodeMappings[name='Actuator']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="infrastructure::Actuator" referenceName="devices"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="smartcity.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

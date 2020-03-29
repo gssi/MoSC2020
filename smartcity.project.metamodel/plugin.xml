@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated smart_city -->
+      <package
+            uri="http://cs.gssi.it/smartcity"
+            class="smartcity.SmartcityPackage"
+            genModel="model/smart_city.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated smart_city -->
+      <package
+            uri="http://cs.gssi.it/smartcity/dataanalytics"
+            class="smartcity.DataAnalytics.DataAnalyticsPackage"
+            genModel="model/smart_city.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated smart_city -->
+      <package
+            uri="http://cs.gssi.it/smartcity/infrastructure"
+            class="smartcity.infrastructure.InfrastructurePackage"
+            genModel="model/smart_city.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated smart_city -->
+      <package
+            uri="http://cs.gssi.it/smartcity/stakeholder"
+            class="smartcity.stakeholder.StakeholderPackage"
+            genModel="model/smart_city.genmodel"/>
+   </extension>
+
+</plugin>
