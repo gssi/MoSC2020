@@ -276,7 +276,7 @@ public class SmartcityPackageImpl extends EPackageImpl implements SmartcityPacka
 
 		initEClass(smartCityEClass, SmartCity.class, "SmartCity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSmartCity_City(), ecorePackage.getEString(), "city", null, 0, 1, SmartCity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSmartCity_Stakeholders(), theStakeholderPackage.getStakeholder(), null, "stakeholders", null, 0, -1, SmartCity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSmartCity_Stakeholders(), theDataAnalyticsPackage.getSource(), null, "stakeholders", null, 0, -1, SmartCity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSmartCity_Data(), theDataAnalyticsPackage.getDataPackage(), null, "data", null, 0, -1, SmartCity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSmartCity_Infrastructurelayer(), theInfrastructurePackage.getPublicInfrastructureLayer(), null, "infrastructurelayer", null, 0, 1, SmartCity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

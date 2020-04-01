@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<smartcity:SmartCityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataAnalytics="http://cs.gssi.it/smartcity/dataanalytics" xmlns:infrastructure="http://cs.gssi.it/smartcity/infrastructure" xmlns:smartcity="http://cs.gssi.it/smartcity" xmlns:stakeholder="http://cs.gssi.it/smartcity/stakeholder">
+  <smartCities city="L'Aquila">
+    <stakeholders xsi:type="stakeholder:Stakeholder" name="CityCouncil" organization="Municipality"/>
+    <stakeholders xsi:type="stakeholder:Stakeholder" name="TIM" organization="Internet and Telecommunication"/>
+    <stakeholders xsi:type="infrastructure:MonitoringInfrastructure" name="EnvironmentMonitoring">
+      <devices xsi:type="infrastructure:Sensor" model="AirQualityMonitor" location=""/>
+    </stakeholders>
+    <data name="AirMonitoring">
+      <data xsi:type="DataAnalytics:RealValue" name="PM" unit="ng/m3" src="//@smartCities.0/@stakeholders.2" value="5.0"/>
+    </data>
+    <data name="NetworkCoverage">
+      <data xsi:type="DataAnalytics:RealValue" name="3GCoverage" unit="Km2" src="//@smartCities.0/@stakeholders.1" value="300.0"/>
+      <data xsi:type="DataAnalytics:RealValue" name="4GCoverage" unit="Km2" src="//@smartCities.0/@stakeholders.1" value="300.0"/>
+      <data xsi:type="DataAnalytics:RealValue" name="5GCoverage" unit="Km2" src="//@smartCities.0/@stakeholders.1" value="100.0"/>
+    </data>
+    <data name="CityStatistics">
+      <data xsi:type="DataAnalytics:RealValue" name="CityExt" unit="Km2" src="//@smartCities.0/@stakeholders.0" value="480.0"/>
+    </data>
+  </smartCities>
+</smartcity:SmartCityModel>

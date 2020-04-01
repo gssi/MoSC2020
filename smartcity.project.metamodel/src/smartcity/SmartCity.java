@@ -7,10 +7,9 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import smartcity.DataAnalytics.DataPackage;
+import smartcity.DataAnalytics.Source;
 
 import smartcity.infrastructure.PublicInfrastructureLayer;
-
-import smartcity.stakeholder.Stakeholder;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +55,7 @@ public interface SmartCity extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Stakeholders</b></em>' containment reference list.
-	 * The list contents are of type {@link smartcity.stakeholder.Stakeholder}.
+	 * The list contents are of type {@link smartcity.DataAnalytics.Source}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Stakeholders</em>' containment reference list.
@@ -64,7 +63,7 @@ public interface SmartCity extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Stakeholder> getStakeholders();
+	EList<Source> getStakeholders();
 
 	/**
 	 * Returns the value of the '<em><b>Data</b></em>' containment reference list.

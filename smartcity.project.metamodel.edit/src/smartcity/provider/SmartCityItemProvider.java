@@ -191,6 +191,26 @@ public class SmartCityItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(SmartcityPackage.Literals.SMART_CITY__STAKEHOLDERS,
+				 DataAnalyticsFactory.eINSTANCE.createSocialMedia()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SmartcityPackage.Literals.SMART_CITY__STAKEHOLDERS,
+				 DataAnalyticsFactory.eINSTANCE.createOpenData()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SmartcityPackage.Literals.SMART_CITY__STAKEHOLDERS,
+				 DataAnalyticsFactory.eINSTANCE.createProvidedData()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SmartcityPackage.Literals.SMART_CITY__STAKEHOLDERS,
+				 InfrastructureFactory.eINSTANCE.createMonitoringInfrastructure()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SmartcityPackage.Literals.SMART_CITY__STAKEHOLDERS,
 				 StakeholderFactory.eINSTANCE.createStakeholder()));
 
 		newChildDescriptors.add

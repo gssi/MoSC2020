@@ -7,7 +7,7 @@ class SmartCityModel {
 
 class SmartCity {
 	attr String city;
-	val stakeholder.Stakeholder[*] stakeholders;
+	val DataAnalytics.Source[*] stakeholders;
 	val DataAnalytics.DataPackage[*] data;
 	val infrastructure.PublicInfrastructureLayer infrastructurelayer;
 }

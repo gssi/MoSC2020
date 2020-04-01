@@ -19,13 +19,12 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import smartcity.DataAnalytics.DataPackage;
+import smartcity.DataAnalytics.Source;
 
 import smartcity.SmartCity;
 import smartcity.SmartcityPackage;
 
 import smartcity.infrastructure.PublicInfrastructureLayer;
-
-import smartcity.stakeholder.Stakeholder;
 
 /**
  * <!-- begin-user-doc -->
@@ -72,7 +71,7 @@ public class SmartCityImpl extends MinimalEObjectImpl.Container implements Smart
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Stakeholder> stakeholders;
+	protected EList<Source> stakeholders;
 
 	/**
 	 * The cached value of the '{@link #getData() <em>Data</em>}' containment reference list.
@@ -142,9 +141,9 @@ public class SmartCityImpl extends MinimalEObjectImpl.Container implements Smart
 	 * @generated
 	 */
 	@Override
-	public EList<Stakeholder> getStakeholders() {
+	public EList<Source> getStakeholders() {
 		if (stakeholders == null) {
-			stakeholders = new EObjectContainmentEList<Stakeholder>(Stakeholder.class, this, SmartcityPackage.SMART_CITY__STAKEHOLDERS);
+			stakeholders = new EObjectContainmentEList<Source>(Source.class, this, SmartcityPackage.SMART_CITY__STAKEHOLDERS);
 		}
 		return stakeholders;
 	}
@@ -259,7 +258,7 @@ public class SmartCityImpl extends MinimalEObjectImpl.Container implements Smart
 				return;
 			case SmartcityPackage.SMART_CITY__STAKEHOLDERS:
 				getStakeholders().clear();
-				getStakeholders().addAll((Collection<? extends Stakeholder>)newValue);
+				getStakeholders().addAll((Collection<? extends Source>)newValue);
 				return;
 			case SmartcityPackage.SMART_CITY__DATA:
 				getData().clear();
