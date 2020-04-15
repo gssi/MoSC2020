@@ -5,4 +5,7 @@
   <semanticResources>model/smartcity.emf</semanticResources>
   <semanticResources>model/smartcity.genmodel</semanticResources>
   <semanticResources>model/MySmartcity.smartcity</semanticResources>
+  <semanticResources>model/AQ.model</semanticResources>
+  <semanticResources>model/BZ.model</semanticResources>
+  <semanticResources>model/MT.model</semanticResources>
 </viewpoint:DAnalysis>
