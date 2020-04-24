@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: smartcity.project.xtext.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: smartcity.project.xtext.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: smartcity.project.xtext.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: smartcity.project.xtext,
+ smartcity.project.xtext.ide,
+ smartcity.project.metamodel,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optional
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: smartcity.project.xtext.ui.contentassist,
+ smartcity.project.xtext.ui.quickfix,
+ smartcity.project.xtext.ui.internal
+Bundle-Activator: smartcity.project.xtext.ui.internal.XtextActivator
