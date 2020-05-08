@@ -1,0 +1,17 @@
+import "util.eol";
+
+context SmartCity {
+	critique NameStartsWithUpperCase {
+		check : self.city = self.city.firstToUpperCase()
+		message : "The smart city " + self.city + " has the name that starts with lower case charachter."
+		
+		fix {
+			
+			title: "Rename to "+ self.city.firstToUpperCase()
+			
+			do {
+				self.city = self.city.firstToUpperCase();
+			}
+		}
+	}
+}

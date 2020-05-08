@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Evaluation
+Bundle-SymbolicName: smartcity.project.evaluation
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: smartcity.project.evaluation
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: smartcity.project.metamodel;bundle-version="1.0.0",
+ org.eclipse.epsilon.evl.engine;bundle-version="1.6.0"
